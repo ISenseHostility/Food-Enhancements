@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "food_enhancements:suspicious_substance"
+    }
+  ],
+  "result":
+  {
+    "item": "minecraft:slime_ball",
+    "count": 2
+  }
+}

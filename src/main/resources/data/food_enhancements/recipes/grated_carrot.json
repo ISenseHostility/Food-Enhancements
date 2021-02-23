@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:carrot",
+      "count": 1
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:grated_carrot",
+    "count": 2
+  }
+}

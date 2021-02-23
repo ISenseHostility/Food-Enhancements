@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "food_enhancements:spider_leg"
+  },
+  "result": "food_enhancements:cooked_spider_leg",
+  "experience": 0.35,
+  "cookingtime": 600
+}

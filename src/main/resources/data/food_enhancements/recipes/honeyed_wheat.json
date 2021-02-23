@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat",
+      "count": 1
+    },
+    {
+      "item": "minecraft:wheat",
+      "count": 1
+    },
+    {
+      "item": "minecraft:honey_bottle",
+      "count": 1
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:honeyed_wheat",
+    "count": 2
+  }
+}

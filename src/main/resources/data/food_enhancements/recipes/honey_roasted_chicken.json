@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "minecraft:spruce_leaves"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:honey_roasted_chicken",
+    "count": 1
+  }
+}

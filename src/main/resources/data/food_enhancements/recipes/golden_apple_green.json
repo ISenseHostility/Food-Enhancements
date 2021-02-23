@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    "y":
+    {
+      "item": "food_enhancements:green_apple"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:golden_apple",
+    "count": 1
+  }
+}

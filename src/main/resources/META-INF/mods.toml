@@ -1,0 +1,13 @@
+
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+modId="food_enhancements" #mandatory
+version="1.16.5-1.4.1" #mandatory
+displayName="Food Enhancements" #mandatory
+logoFile="food_enhancements.png" #optional
+authors="ISenseHostility" #optional
+description='''
+Food Enhancements adds some vanilla-friendly foods to the game!
+'''

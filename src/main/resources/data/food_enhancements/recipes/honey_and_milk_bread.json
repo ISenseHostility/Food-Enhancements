@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " y ",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "food_enhancements:honeyed_wheat"
+    },
+    "y":
+    {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:milk_and_honey_bread",
+    "count": 1
+  }
+}

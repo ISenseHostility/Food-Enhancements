@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "food_enhancements:fish_fillet"
+  },
+  "result": "food_enhancements:cooked_fish_fillet",
+  "experience": 0.35,
+  "cookingtime": 600
+}

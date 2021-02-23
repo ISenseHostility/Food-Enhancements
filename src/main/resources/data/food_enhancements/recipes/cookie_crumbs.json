@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:cookie_crumbs",
+    "count": 2
+  }
+}

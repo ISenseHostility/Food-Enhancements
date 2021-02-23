@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "food_enhancements:cooked_spider_legs"
+    },
+    {
+      "tag": "food_enhancements:cooked_spider_legs"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:spider_soup",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "food_enhancements:raw_fish"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:fish_fillet"
+  }
+}

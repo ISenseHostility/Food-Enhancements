@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:oak_leaves",
+      "count": 1
+    },
+    {
+      "item": "minecraft:cooked_porkchop",
+      "count": 1
+    },
+    {
+      "item": "minecraft:birch_leaves",
+      "count": 1
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:seasoned_pork",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:mushroom_stew"
+    },
+    {
+      "item": "food_enhancements:bat_wing"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:bat_soup",
+    "count": 1
+  }
+}

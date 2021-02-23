@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "minecraft:fishes"
+  },
+  "result": "food_enhancements:fish_bones",
+  "experience": 0.1,
+  "cookingtime": 100
+}

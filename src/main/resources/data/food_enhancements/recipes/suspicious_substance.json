@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "food_enhancements:gelatin"
+    },
+    {
+      "item": "food_enhancements:gelatin"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:suspicious_substance",
+    "count": 1
+  }
+}

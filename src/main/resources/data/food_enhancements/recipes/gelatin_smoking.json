@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:bone"
+  },
+  "result": "food_enhancements:gelatin",
+  "experience": 0.1,
+  "cookingtime": 100
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "food_enhancements:bowl_of_fish_bones"
+  },
+  "result": "food_enhancements:fish_stock",
+  "experience": 0.1,
+  "cookingtime": 100
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:egg"
+  },
+  "result": "food_enhancements:fried_egg",
+  "experience": 0.1,
+  "cookingtime": 100
+}

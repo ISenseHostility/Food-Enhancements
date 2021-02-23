@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cake"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:cake_slice",
+    "count": 9
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "food_enhancements:bowl_of_water"
+    },
+    {
+      "item": "food_enhancements:fish_bones"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:bowl_of_fish_bones",
+    "count": 1
+  }
+}

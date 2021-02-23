@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "xyx",
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:gold_nugget"
+    },
+    "y":
+    {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:golden_berries",
+    "count": 1
+  }
+}
