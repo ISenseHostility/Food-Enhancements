@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "food_enhancements:golden_berries"
+    },
+    {
+      "item": "food_enhancements:golden_berries"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:golden_berry_wine",
+    "count": 1
+  }
+}

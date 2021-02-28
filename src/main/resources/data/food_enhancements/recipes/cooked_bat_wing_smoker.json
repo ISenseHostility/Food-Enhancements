@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoker",
+  "ingredient": {
+    "item": "food_enhancements:bat_wing"
+  },
+  "result": "food_enhancements:cooked_bat_wing",
+  "experience": 0.1,
+  "cookingtime": 100
+}

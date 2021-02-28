@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_carrot",
+      "count": 1
+    },
+    {
+      "item": "food_enhancements:grated_golden_carrot",
+      "count": 1
+    },
+    {
+      "item": "minecraft:bowl",
+      "count": 1
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:golden_carrot_salad",
+    "count": 1
+  }
+}

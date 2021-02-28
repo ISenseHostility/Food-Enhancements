@@ -1,0 +1,13 @@
+{
+  "type": "food_enhancements:green_apple_drop",
+  "conditions": [
+    {
+      "condition": "minecraft:survives_explosion"
+    },
+    {
+      "condition": "block_state_property",
+      "block":"minecraft:birch_leaves"
+    }
+  ],
+  "appleItem": "food_enhancements:green_apple"
+}

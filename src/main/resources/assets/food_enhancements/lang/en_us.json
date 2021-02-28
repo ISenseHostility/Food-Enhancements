@@ -52,5 +52,10 @@
   "item.food_enhancements.pumpkin_juice": "Pumpkin Juice",
   "item.food_enhancements.bat_wing": "Bat Wing",
   "item.food_enhancements.bat_soup": "Bat Soup",
-  "item.food_enhancements.fiery_stew": "Fiery Stew"
+  "item.food_enhancements.fiery_stew": "Fiery Stew",
+  "item.food_enhancements.cooked_bat_wing": "Cooked Bat Wing",
+  "item.food_enhancements.golden_carrot_salad": "Golden Carrot Salad",
+  "item.food_enhancements.grated_golden_carrot": "Grated Golden Carrot",
+  "item.food_enhancements.golden_berry_pie": "Golden Berry Pie",
+  "item.food_enhancements.golden_berry_wine": "Golden Berry Wine"
 }

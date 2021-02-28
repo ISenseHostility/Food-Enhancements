@@ -70,4 +70,9 @@ public class ItemRegistry {
     public static final RegistryObject<BatWing> BAT_WING = ITEMS.register("bat_wing", BatWing::new);
     public static final RegistryObject<BatSoup> BAT_SOUP = ITEMS.register("bat_soup", BatSoup::new);
     public static final RegistryObject<FieryStew> FIERY_STEW = ITEMS.register("fiery_stew", FieryStew::new);
+    public static final RegistryObject<CookedBatWing> COOKED_BAT_WING = ITEMS.register("cooked_bat_wing", CookedBatWing::new);
+    public static final RegistryObject<GoldenCarrotSalad> GOLDEN_CARROT_SALAD = ITEMS.register("golden_carrot_salad", GoldenCarrotSalad::new);
+    public static final RegistryObject<GratedGoldenCarrot> GRATED_GOLDEN_CARROT = ITEMS.register("grated_golden_carrot", GratedGoldenCarrot::new);
+    public static final RegistryObject<GoldenBerryPie> GOLDEN_BERRY_PIE = ITEMS.register("golden_berry_pie", GoldenBerryPie::new);
+    public static final RegistryObject<GoldenBerryWine> GOLDEN_BERRY_WINE = ITEMS.register("golden_berry_wine", GoldenBerryWine::new);
 }

@@ -3,6 +3,7 @@ package com.isensehostility.food_enhancements;
 import com.isensehostility.food_enhancements.init.ItemRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -19,22 +20,14 @@ public class FoodEnhancements
     private static final Logger LOGGER = LogManager.getLogger();
 
     public FoodEnhancements() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
         ItemRegistry.init();
 
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
-
-    }
-
-    private void doClientStuff(final FMLClientSetupEvent event)
-    {
-
+    public static ResourceLocation locate (String name){
+        return new ResourceLocation(MOD_ID, name);
     }
 
     public static final ItemGroup TAB = new ItemGroup("foodEnhancementsTab")
