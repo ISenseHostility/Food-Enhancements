@@ -27,6 +27,7 @@ public class GoldenCarrotSalad extends Item {
         );
     }
 
+    @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
         PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
 

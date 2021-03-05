@@ -28,6 +28,7 @@ public class GoldenAppleCider extends Item {
         );
     }
 
+    @Override
     public UseAction getUseAction(ItemStack par1ItemStack) {
         return UseAction.DRINK;
     }
@@ -37,6 +38,7 @@ public class GoldenAppleCider extends Item {
         return true;
     }
 
+    @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
         PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
 

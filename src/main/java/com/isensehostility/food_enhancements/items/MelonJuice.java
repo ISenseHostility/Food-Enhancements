@@ -23,10 +23,12 @@ public class MelonJuice extends Item {
         );
     }
 
+    @Override
     public UseAction getUseAction(ItemStack par1ItemStack) {
         return UseAction.DRINK;
     }
 
+    @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
         PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
 

@@ -75,4 +75,5 @@ public class ItemRegistry {
     public static final RegistryObject<GratedGoldenCarrot> GRATED_GOLDEN_CARROT = ITEMS.register("grated_golden_carrot", GratedGoldenCarrot::new);
     public static final RegistryObject<GoldenBerryPie> GOLDEN_BERRY_PIE = ITEMS.register("golden_berry_pie", GoldenBerryPie::new);
     public static final RegistryObject<GoldenBerryWine> GOLDEN_BERRY_WINE = ITEMS.register("golden_berry_wine", GoldenBerryWine::new);
+    public static final RegistryObject<CreamyHoneyToast> CREAMY_HONEY_TOAST = ITEMS.register("creamy_honey_toast", CreamyHoneyToast::new);
 }

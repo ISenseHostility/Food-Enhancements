@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "food_enhancements:milk_and_honey_bread"
+  },
+  "result": "food_enhancements:creamy_honey_toast",
+  "experience": 0.1,
+  "cookingtime": 100
+}
