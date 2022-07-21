@@ -1,7 +1,7 @@
 package com.isensehostility.food_enhancements;
 
 import com.isensehostility.food_enhancements.init.ItemRegistry;
-import com.isensehostility.food_enhancements.init.CodecRegistry;
+import com.isensehostility.food_enhancements.init.SerializerRegistry;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
@@ -14,7 +14,7 @@ public class FoodEnhancements
 
     public FoodEnhancements() {
         ItemRegistry.init();
-        CodecRegistry.init();
+        SerializerRegistry.init();
     }
 
     public static final CreativeModeTab TAB = new CreativeModeTab("foodEnhancementsTab")
