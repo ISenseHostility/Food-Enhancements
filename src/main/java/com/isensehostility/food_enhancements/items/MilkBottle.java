@@ -1,47 +1,51 @@
 package com.isensehostility.food_enhancements.items;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraft.world.World;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.Level;
 
 public class MilkBottle extends Item {
 
     public MilkBottle() {
         super(new Item.Properties()
-                .food(new Food.Builder()
-                        .hunger(2)
-                        .saturation(0.5F)
-                        .setAlwaysEdible()
-                        .effect(()-> new EffectInstance(Effects.INSTANT_HEALTH,1,0),1)
+                .food(new FoodProperties.Builder()
+                        .nutrition(2)
+                        .saturationMod(0.5F)
+                        .alwaysEat()
+                        .effect(()-> new MobEffectInstance(MobEffects.HEAL,1,0),1)
                         .build())
-                .group(FoodEnhancements.TAB)
-                .maxStackSize(16)
+                .tab(FoodEnhancements.TAB)
+                .stacksTo(16)
 
         );
     }
 
     @Override
-    public UseAction getUseAction(ItemStack par1ItemStack) {
-        return UseAction.DRINK;
+    public UseAnim getUseAnimation(ItemStack p_41452_) {
+        return UseAnim.DRINK;
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-        PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
+    public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
+        Player playerentity = entityLiving instanceof Player ? (Player) entityLiving : null;
 
-        if (playerentity == null || !playerentity.abilities.isCreativeMode) {
+        if (playerentity == null || !playerentity.isCreative()) {
             if (stack.isEmpty()) {
                 return new ItemStack(Items.GLASS_BOTTLE);
             }
 
             if (playerentity != null) {
-                playerentity.inventory.addItemStackToInventory(new ItemStack(Items.GLASS_BOTTLE));
+                playerentity.getInventory().add(new ItemStack(Items.GLASS_BOTTLE));
             }
         }
-        return this.isFood() ? entityLiving.onFoodEaten(worldIn, stack) : stack;
+        return this.isEdible() ? entityLiving.eat(worldIn, stack) : stack;
     }
 }

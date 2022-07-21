@@ -1,12 +1,12 @@
 package com.isensehostility.food_enhancements.init;
 
-import com.isensehostility.food_enhancements.items.*;
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+import com.isensehostility.food_enhancements.items.*;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 
@@ -14,7 +14,6 @@ public class ItemRegistry {
 
     public static void init() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-
     }
 
     // Items
@@ -76,4 +75,6 @@ public class ItemRegistry {
     public static final RegistryObject<GoldenBerryPie> GOLDEN_BERRY_PIE = ITEMS.register("golden_berry_pie", GoldenBerryPie::new);
     public static final RegistryObject<GoldenBerryWine> GOLDEN_BERRY_WINE = ITEMS.register("golden_berry_wine", GoldenBerryWine::new);
     public static final RegistryObject<CreamyHoneyToast> CREAMY_HONEY_TOAST = ITEMS.register("creamy_honey_toast", CreamyHoneyToast::new);
+    public static final RegistryObject<GlowBerryPie> GLOW_BERRY_PIE = ITEMS.register("glow_berry_pie", GlowBerryPie::new);
+    public static final RegistryObject<GlowBerryWine> GLOW_BERRY_WINE = ITEMS.register("glow_berry_wine", GlowBerryWine::new);
 }

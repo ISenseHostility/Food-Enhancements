@@ -1,27 +1,31 @@
 package com.isensehostility.food_enhancements.items;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraft.world.World;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.Level;
 
 public class GlisteringFruitBowl extends Item {
 
     public GlisteringFruitBowl() {
         super(new Item.Properties()
-                .group(FoodEnhancements.TAB)
-                .maxStackSize(16)
-                .containerItem(Items.BOWL)
+                .tab(FoodEnhancements.TAB)
+                .stacksTo(16)
+                .craftRemainder(Items.BOWL)
                 .rarity(Rarity.RARE)
-                .food(new Food.Builder()
-                        .hunger(7)
-                        .saturation(1.0F)
-                        .effect(()->new EffectInstance(Effects.ABSORPTION, 2400, 0),1)
-                        .effect(()->new EffectInstance(Effects.REGENERATION, 400, 1), 1)
-                        .effect(()->new EffectInstance(Effects.RESISTANCE, 400, 1), 1)
+                .food(new FoodProperties.Builder()
+                        .nutrition(7)
+                        .saturationMod(1.0F)
+                        .effect(()->new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0),1)
+                        .effect(()->new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1)
+                        .effect(()->new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 400, 1), 1)
                         .build())
 
 
@@ -29,18 +33,18 @@ public class GlisteringFruitBowl extends Item {
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-        PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
+    public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
+        Player playerentity = entityLiving instanceof Player ? (Player) entityLiving : null;
 
-        if (playerentity == null || !playerentity.abilities.isCreativeMode) {
+        if (playerentity == null || !playerentity.isCreative()) {
             if (stack.isEmpty()) {
                 return new ItemStack(Items.BOWL);
             }
 
             if (playerentity != null) {
-                playerentity.inventory.addItemStackToInventory(new ItemStack(Items.BOWL));
+                playerentity.getInventory().add(new ItemStack(Items.BOWL));
             }
         }
-        return this.isFood() ? entityLiving.onFoodEaten(worldIn, stack) : stack;
+        return this.isEdible() ? entityLiving.eat(worldIn, stack) : stack;
     }
 }

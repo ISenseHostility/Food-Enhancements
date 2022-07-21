@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:campfire",
+  "type": "minecraft:campfire_cooking",
   "ingredient": {
     "item": "food_enhancements:bat_wing"
   },

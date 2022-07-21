@@ -6,24 +6,26 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-public class GlisteringMelonJuice extends Item {
+public class GlowBerryWine extends Item {
 
-    public GlisteringMelonJuice() {
-        super(new Item.Properties()
-                .food(new FoodProperties.Builder()
-                        .nutrition(4)
-                        .saturationMod(0.25F)
-                        .effect(()-> new MobEffectInstance(MobEffects.ABSORPTION,400,0),0.7F)
-                        .alwaysEat()
-                        .build())
+    public GlowBerryWine() {
+        super(new Properties()
                 .tab(FoodEnhancements.TAB)
                 .stacksTo(16)
                 .craftRemainder(Items.GLASS_BOTTLE)
-                .rarity(Rarity.UNCOMMON)
-
+                .food(new FoodProperties.Builder()
+                        .nutrition(3)
+                        .saturationMod(0.33F)
+                        .alwaysEat()
+                        .effect(()->new MobEffectInstance(MobEffects.CONFUSION, 200, 1), 1)
+                        .effect(()-> new MobEffectInstance(MobEffects.GLOWING,800,0),1)
+                        .build())
 
         );
     }

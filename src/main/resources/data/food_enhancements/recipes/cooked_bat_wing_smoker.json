@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smoker",
+  "type": "minecraft:smoking",
   "ingredient": {
     "item": "food_enhancements:bat_wing"
   },

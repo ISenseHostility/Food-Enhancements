@@ -1,17 +1,17 @@
 package com.isensehostility.food_enhancements.items;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
 
 public class Toast extends Item {
 
     public Toast() {
         super(new Item.Properties()
-                .group(FoodEnhancements.TAB)
-                .food(new Food.Builder()
-                        .hunger(6)
-                        .saturation(0.83F)
+                .tab(FoodEnhancements.TAB)
+                .food(new FoodProperties.Builder()
+                        .nutrition(6)
+                        .saturationMod(0.83F)
                         .build())
 
         );

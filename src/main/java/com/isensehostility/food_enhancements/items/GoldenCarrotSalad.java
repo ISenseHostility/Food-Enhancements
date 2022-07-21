@@ -1,45 +1,45 @@
 package com.isensehostility.food_enhancements.items;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Food;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraft.world.World;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 
 public class GoldenCarrotSalad extends Item {
 
     public GoldenCarrotSalad() {
         super(new Item.Properties()
-                .group(FoodEnhancements.TAB)
-                .maxStackSize(16)
-                .containerItem(Items.BOWL)
-                .food(new Food.Builder()
-                        .hunger(9)
-                        .effect(()-> new EffectInstance(Effects.NIGHT_VISION,2400,0),1)
-                        .saturation(0.66F)
+                .tab(FoodEnhancements.TAB)
+                .stacksTo(16)
+                .craftRemainder(Items.BOWL)
+                .food(new FoodProperties.Builder()
+                        .nutrition(9)
+                        .effect(()-> new MobEffectInstance(MobEffects.NIGHT_VISION,2400,0),1)
+                        .saturationMod(0.66F)
                         .build())
 
         );
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-        PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
+    public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
+        Player playerentity = entityLiving instanceof Player ? (Player) entityLiving : null;
 
-        if (playerentity == null || !playerentity.abilities.isCreativeMode) {
+        if (playerentity == null || !playerentity.isCreative()) {
             if (stack.isEmpty()) {
                 return new ItemStack(Items.BOWL);
             }
 
             if (playerentity != null) {
-                playerentity.inventory.addItemStackToInventory(new ItemStack(Items.BOWL));
+                playerentity.getInventory().add(new ItemStack(Items.BOWL));
             }
         }
-        return this.isFood() ? entityLiving.onFoodEaten(worldIn, stack) : stack;
+        return this.isEdible() ? entityLiving.eat(worldIn, stack) : stack;
     }
 }

@@ -1,49 +1,53 @@
 package com.isensehostility.food_enhancements.items;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.*;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
-import net.minecraft.world.World;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.Level;
 
 public class SuspiciousSubstance extends Item {
 
     public SuspiciousSubstance() {
         super(new Item.Properties()
-                .group(FoodEnhancements.TAB)
-                .maxStackSize(16)
-                .containerItem(Items.GLASS_BOTTLE)
-                .food(new Food.Builder()
-                        .hunger(4)
-                        .saturation(0.5F)
-                        .setAlwaysEdible()
-                        .effect(()->new EffectInstance(Effects.ABSORPTION, 600, 0), 0.4F)
-                        .effect(()->new EffectInstance(Effects.WEAKNESS, 400, 0), 0.3F)
+                .tab(FoodEnhancements.TAB)
+                .stacksTo(16)
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .food(new FoodProperties.Builder()
+                        .nutrition(4)
+                        .saturationMod(0.5F)
+                        .alwaysEat()
+                        .effect(()->new MobEffectInstance(MobEffects.ABSORPTION, 600, 0), 0.4F)
+                        .effect(()->new MobEffectInstance(MobEffects.WEAKNESS, 400, 0), 0.3F)
                         .build())
 
         );
     }
 
     @Override
-    public UseAction getUseAction(ItemStack par1ItemStack) {
-        return UseAction.DRINK;
+    public UseAnim getUseAnimation(ItemStack p_41452_) {
+        return UseAnim.DRINK;
     }
 
     @Override
-    public ItemStack onItemUseFinish(ItemStack stack, World worldIn, LivingEntity entityLiving) {
-        PlayerEntity playerentity = entityLiving instanceof PlayerEntity ? (PlayerEntity) entityLiving : null;
+    public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
+        Player playerentity = entityLiving instanceof Player ? (Player) entityLiving : null;
 
-        if (playerentity == null || !playerentity.abilities.isCreativeMode) {
+        if (playerentity == null || !playerentity.isCreative()) {
             if (stack.isEmpty()) {
                 return new ItemStack(Items.GLASS_BOTTLE);
             }
 
             if (playerentity != null) {
-                playerentity.inventory.addItemStackToInventory(new ItemStack(Items.GLASS_BOTTLE));
+                playerentity.getInventory().add(new ItemStack(Items.GLASS_BOTTLE));
             }
         }
-        return this.isFood() ? entityLiving.onFoodEaten(worldIn, stack) : stack;
+        return this.isEdible() ? entityLiving.eat(worldIn, stack) : stack;
     }
 }

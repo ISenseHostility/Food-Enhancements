@@ -1,12 +1,12 @@
 
 modLoader="javafml" #mandatory
-loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
-license="GNU General Public License v3.0"
+loaderVersion="[41,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All Rights Reserved"
 issueTrackerURL="https://github.com/ISenseHostility/Food-Enhancements/issues"
 
 [[mods]] #mandatory
     modId="food_enhancements" #mandatory
-    version="1.16.5-1.5.0" #mandatory
+    version="1.19-1.9.1" #mandatory
     displayName="Food Enhancements" #mandatory
     displayURL="https://www.curseforge.com/minecraft/mc-mods/food-enhancements"
     logoFile="food_enhancements.png" #optional
@@ -18,13 +18,13 @@ issueTrackerURL="https://github.com/ISenseHostility/Food-Enhancements/issues"
 [[dependencies.food_enhancements]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.food_enhancements]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5]"
+    versionRange="[1.19, )"
     ordering="NONE"
     side="BOTH"

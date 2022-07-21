@@ -1,52 +1,51 @@
 package com.isensehostility.food_enhancements.loot_modifiers;
 
+import com.google.common.base.Suppliers;
 import com.google.gson.JsonObject;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.loot.LootContext;
-import net.minecraft.loot.conditions.ILootCondition;
-import net.minecraft.util.JSONUtils;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.GsonHelper;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
+import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
+import net.minecraftforge.common.util.JsonUtils;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
+import java.util.function.Supplier;
 
 public class GreenAppleModifier extends LootModifier {
     private final Item appleItem;
+    private final Random random = new Random();
+    public static final Supplier<Codec<GreenAppleModifier>> CODEC = Suppliers.memoize(() -> RecordCodecBuilder.create(inst -> codecStart(inst)
+            .and(ForgeRegistries.ITEMS.getCodec().fieldOf("appleItem").forGetter(m -> m.appleItem))
+            .apply(inst, GreenAppleModifier::new)
+    ));
 
-    public GreenAppleModifier(ILootCondition[] conditionsIn, Item apple) {
+    public GreenAppleModifier(LootItemCondition[] conditionsIn, Item apple) {
         super(conditionsIn);
         this.appleItem = apple;
     }
 
     @Nonnull
     @Override
-    public List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        Random chance = new Random();
-        if (chance.nextInt(200) < 1){
-            List<ItemStack> stack = new ArrayList<ItemStack>();
+    public ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
+        if (random.nextInt(200) < 1) {
+            ObjectArrayList<ItemStack> stack = new ObjectArrayList<>();
             stack.add(new ItemStack(appleItem));
             return stack;
-        }
-        else return generatedLoot;
+        } else return generatedLoot;
     }
 
-    public static class Serializer extends GlobalLootModifierSerializer<GreenAppleModifier> {
-        @Override
-        public GreenAppleModifier read(ResourceLocation name, JsonObject object, ILootCondition[] conditionsIn) {
-            Item green_apple = ForgeRegistries.ITEMS.getValue(new ResourceLocation(JSONUtils.getString(object, "appleItem")));
-            return new GreenAppleModifier(conditionsIn, green_apple);
-        }
-
-        @Override
-        public JsonObject write(GreenAppleModifier instance) {
-            return null;
-        }
+    @Override
+    public Codec<? extends IGlobalLootModifier> codec() {
+        return CODEC.get();
     }
 }
 
