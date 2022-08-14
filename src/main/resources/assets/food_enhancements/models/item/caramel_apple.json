@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "food_enhancements:items/caramel_red_apple"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "food_enhancements:apple_type": 1
+      },
+      "model": "food_enhancements:item/caramel_red_apple"
+    },
+    {
+      "predicate": {
+        "food_enhancements:apple_type": 2
+      },
+      "model": "food_enhancements:item/caramel_green_apple"
+    }
+  ]
+}

@@ -11,9 +11,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class CodecRegistry {
 
-    public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> CODECS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, FoodEnhancements.MOD_ID);
+    public static final DeferredRegister<Codec<? extends IGlobalLootModifier>> CODECS = DeferredRegister.create(ForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, FoodEnhancements.MODID);
 
-    public static void init() {
+    public static void initialize() {
         CODECS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 

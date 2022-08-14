@@ -1,5 +1,5 @@
 {
-  "itemGroup.foodEnhancementsTab": "Food Enhancements",
+  "itemGroup.food_enhancements_tab": "Food Enhancements",
 
   "item.food_enhancements.boiled_egg": "Boiled Egg",
   "item.food_enhancements.fruit_bowl": "Fruit Bowl",
@@ -65,5 +65,7 @@
   "item.food_enhancements.marshmallow_on_a_stick": "Marshmallow on a Stick",
   "item.food_enhancements.burnt_marshmallow": "Burnt Marshmallow",
   "item.food_enhancements.burnt_marshmallow_on_a_stick": "Burnt Marshmallow on a Stick",
-  "item.food_enhancements.smoldering_marshmallow": "Smoldering Marshmallow"
+  "item.food_enhancements.smoldering_marshmallow": "Smoldering Marshmallow",
+  "item.food_enhancements.caramel": "Caramel",
+  "item.food_enhancements.caramel_apple": "Caramel Apple"
 }

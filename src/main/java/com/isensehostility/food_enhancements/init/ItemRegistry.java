@@ -10,9 +10,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FoodEnhancements.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FoodEnhancements.MODID);
 
-    public static void init() {
+    public static void initialize() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
@@ -82,4 +82,6 @@ public class ItemRegistry {
     public static final RegistryObject<BurntMarshmallow> BURNT_MARSHMALLOW = ITEMS.register("burnt_marshmallow", BurntMarshmallow::new);
     public static final RegistryObject<BurntMarshmallowOnAStick> BURNT_MARSHMALLOW_ON_A_STICK = ITEMS.register("burnt_marshmallow_on_a_stick", BurntMarshmallowOnAStick::new);
     public static final RegistryObject<SmolderingMarshmallow> SMOLDERING_MARSHMALLOW = ITEMS.register("smoldering_marshmallow", SmolderingMarshmallow::new);
+    public static final RegistryObject<Caramel> CARAMEL = ITEMS.register("caramel", Caramel::new);
+    public static final RegistryObject<CaramelApple> CARAMEL_APPLE = ITEMS.register("caramel_apple", CaramelApple::new);
 }
