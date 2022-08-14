@@ -84,4 +84,5 @@ public class ItemRegistry {
     public static final RegistryObject<SmolderingMarshmallow> SMOLDERING_MARSHMALLOW = ITEMS.register("smoldering_marshmallow", SmolderingMarshmallow::new);
     public static final RegistryObject<Caramel> CARAMEL = ITEMS.register("caramel", Caramel::new);
     public static final RegistryObject<CaramelApple> CARAMEL_APPLE = ITEMS.register("caramel_apple", CaramelApple::new);
+    public static final RegistryObject<Jelly> JELLY = ITEMS.register("jelly", Jelly::new);
 }

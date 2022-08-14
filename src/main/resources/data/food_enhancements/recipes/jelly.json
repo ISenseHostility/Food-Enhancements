@@ -1,0 +1,21 @@
+{
+  "type": "food_enhancements:jelly",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "food_enhancements:gelatin"
+    },
+    {
+      "item": "food_enhancements:gelatin"
+    },
+    {
+      "tag": "food_enhancements:jelly_ingredients"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:jelly"
+  }
+}

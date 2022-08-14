@@ -2,6 +2,7 @@ package com.isensehostility.food_enhancements.init;
 
 import com.isensehostility.food_enhancements.FoodEnhancements;
 import com.isensehostility.food_enhancements.recipe.CaramelAppleTypeRecipe;
+import com.isensehostility.food_enhancements.recipe.JellyTypeRecipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,4 +17,5 @@ public class RecipeRegistry {
     }
 
     public static final RegistryObject<RecipeSerializer<CaramelAppleTypeRecipe>> CARAMEL_APPLE = RECIPES.register("caramel_apple", CaramelAppleTypeRecipe.Serializer::new);
+    public static final RegistryObject<RecipeSerializer<JellyTypeRecipe>> JELLY = RECIPES.register("jelly", JellyTypeRecipe.Serializer::new);
 }

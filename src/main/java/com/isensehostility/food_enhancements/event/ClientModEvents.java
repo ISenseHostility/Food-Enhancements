@@ -19,6 +19,10 @@ public class ClientModEvents {
                     new ResourceLocation(FoodEnhancements.MODID, "apple_type"), (stack, level, entity, number) -> {
                         return stack.getOrCreateTag().getInt("apple_type");
                     });
+            ItemProperties.register(ItemRegistry.JELLY.get(),
+                    new ResourceLocation(FoodEnhancements.MODID, "jelly_type"), (stack, level, entity, number) -> {
+                        return stack.getOrCreateTag().getInt("jelly_type");
+                    });
         });
     }
 }
