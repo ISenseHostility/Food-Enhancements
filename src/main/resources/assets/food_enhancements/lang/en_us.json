@@ -60,5 +60,10 @@
   "item.food_enhancements.golden_berry_wine": "Golden Berry Wine",
   "item.food_enhancements.creamy_honey_toast": "Creamy Honey Toast",
   "item.food_enhancements.glow_berry_pie": "Glow Berry Pie",
-  "item.food_enhancements.glow_berry_wine": "Glow Berry Wine"
+  "item.food_enhancements.glow_berry_wine": "Glow Berry Wine",
+  "item.food_enhancements.marshmallow": "Marshmallow",
+  "item.food_enhancements.marshmallow_on_a_stick": "Marshmallow on a Stick",
+  "item.food_enhancements.burnt_marshmallow": "Burnt Marshmallow",
+  "item.food_enhancements.burnt_marshmallow_on_a_stick": "Burnt Marshmallow on a Stick",
+  "item.food_enhancements.smoldering_marshmallow": "Smoldering Marshmallow"
 }

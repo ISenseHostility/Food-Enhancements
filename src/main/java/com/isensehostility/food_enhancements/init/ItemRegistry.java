@@ -77,4 +77,9 @@ public class ItemRegistry {
     public static final RegistryObject<CreamyHoneyToast> CREAMY_HONEY_TOAST = ITEMS.register("creamy_honey_toast", CreamyHoneyToast::new);
     public static final RegistryObject<GlowBerryPie> GLOW_BERRY_PIE = ITEMS.register("glow_berry_pie", GlowBerryPie::new);
     public static final RegistryObject<GlowBerryWine> GLOW_BERRY_WINE = ITEMS.register("glow_berry_wine", GlowBerryWine::new);
+    public static final RegistryObject<Marshmallow> MARSHMALLOW = ITEMS.register("marshmallow", Marshmallow::new);
+    public static final RegistryObject<MarshmallowOnAStick> MARSHMALLOW_ON_A_STICK = ITEMS.register("marshmallow_on_a_stick", MarshmallowOnAStick::new);
+    public static final RegistryObject<BurntMarshmallow> BURNT_MARSHMALLOW = ITEMS.register("burnt_marshmallow", BurntMarshmallow::new);
+    public static final RegistryObject<BurntMarshmallowOnAStick> BURNT_MARSHMALLOW_ON_A_STICK = ITEMS.register("burnt_marshmallow_on_a_stick", BurntMarshmallowOnAStick::new);
+    public static final RegistryObject<SmolderingMarshmallow> SMOLDERING_MARSHMALLOW = ITEMS.register("smoldering_marshmallow", SmolderingMarshmallow::new);
 }
