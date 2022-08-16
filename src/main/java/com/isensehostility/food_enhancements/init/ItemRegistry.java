@@ -85,4 +85,10 @@ public class ItemRegistry {
     public static final RegistryObject<Caramel> CARAMEL = ITEMS.register("caramel", Caramel::new);
     public static final RegistryObject<CaramelApple> CARAMEL_APPLE = ITEMS.register("caramel_apple", CaramelApple::new);
     public static final RegistryObject<Jelly> JELLY = ITEMS.register("jelly", Jelly::new);
+    public static final RegistryObject<CaramelMelon> CARAMEL_MELON = ITEMS.register("caramel_melon", CaramelMelon::new);
+    public static final RegistryObject<CaramelChorus> CARAMEL_CHORUS = ITEMS.register("caramel_chorus", CaramelChorus::new);
+    public static final RegistryObject<CaramelPumpkin> CARAMEL_PUMPKIN = ITEMS.register("caramel_pumpkin", CaramelPumpkin::new);
+    public static final RegistryObject<CaramelChocolate> CARAMEL_CHOCOLATE = ITEMS.register("caramel_chocolate", CaramelChocolate::new);
+    public static final RegistryObject<CaramelGlowBerries> CARAMEL_GLOW_BERRIES = ITEMS.register("caramel_glow_berries", CaramelGlowBerries::new);
+    public static final RegistryObject<CaramelSweetBerries> CARAMEL_SWEET_BERRIES = ITEMS.register("caramel_sweet_berries", CaramelSweetBerries::new);
 }

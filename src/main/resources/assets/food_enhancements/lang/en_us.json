@@ -68,5 +68,11 @@
   "item.food_enhancements.smoldering_marshmallow": "Smoldering Marshmallow",
   "item.food_enhancements.caramel": "Caramel",
   "item.food_enhancements.caramel_apple": "Caramel Apple",
-  "item.food_enhancements.jelly": "Jelly"
+  "item.food_enhancements.jelly": "Jelly",
+  "item.food_enhancements.caramel_melon": "Caramel Melon",
+  "item.food_enhancements.caramel_chorus": "Caramel Chorus",
+  "item.food_enhancements.caramel_pumpkin": "Caramel Pumpkin",
+  "item.food_enhancements.caramel_chocolate": "Caramel Chocolate",
+  "item.food_enhancements.caramel_glow_berries": "Caramel Glow Berries",
+  "item.food_enhancements.caramel_sweet_berries": "Caramel Sweet Berries"
 }
