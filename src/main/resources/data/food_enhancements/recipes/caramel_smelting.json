@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:sugar"
+  },
+  "result": "food_enhancements:caramel",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "food_enhancements:caramel"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:caramel_sweet_berries"
+  }
+}

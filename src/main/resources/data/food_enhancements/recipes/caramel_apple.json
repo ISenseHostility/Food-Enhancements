@@ -1,0 +1,15 @@
+{
+  "type": "food_enhancements:caramel_apple",
+  "ingredients": [
+    {
+      "tag": "food_enhancements:apples"
+    },
+    {
+      "item": "food_enhancements:caramel"
+    }
+  ],
+  "result":
+  {
+    "item": "food_enhancements:caramel_apple"
+  }
+}

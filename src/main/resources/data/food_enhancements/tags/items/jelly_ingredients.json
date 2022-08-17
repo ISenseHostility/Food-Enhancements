@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:apple",
+    "minecraft:golden_apple",
+    "minecraft:enchanted_golden_apple",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "minecraft:melon_slice",
+    "minecraft:glistering_melon_slice",
+    "minecraft:chorus_fruit",
+    "minecraft:honey_bottle",
+    "minecraft:cocoa_beans",
+    "minecraft:blaze_powder",
+    "minecraft:magma_cream",
+    "food_enhancements:cookie_crumbs",
+    "food_enhancements:caramel",
+    "food_enhancements:marshmallow",
+    "food_enhancements:golden_berries",
+    "food_enhancements:milk_bottle",
+    "food_enhancements:pumpkin_slice",
+    "food_enhancements:green_apple"
+  ]
+}

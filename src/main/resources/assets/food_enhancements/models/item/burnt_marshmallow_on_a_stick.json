@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "food_enhancements:items/burnt_marshmallow_on_a_stick"
+  }
+}
