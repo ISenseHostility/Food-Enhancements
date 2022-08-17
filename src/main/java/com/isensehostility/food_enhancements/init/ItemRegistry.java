@@ -10,9 +10,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistry {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FoodEnhancements.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, FoodEnhancements.MODID);
 
-    public static void init() {
+    public static void initialize() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
@@ -77,4 +77,18 @@ public class ItemRegistry {
     public static final RegistryObject<CreamyHoneyToast> CREAMY_HONEY_TOAST = ITEMS.register("creamy_honey_toast", CreamyHoneyToast::new);
     public static final RegistryObject<GlowBerryPie> GLOW_BERRY_PIE = ITEMS.register("glow_berry_pie", GlowBerryPie::new);
     public static final RegistryObject<GlowBerryWine> GLOW_BERRY_WINE = ITEMS.register("glow_berry_wine", GlowBerryWine::new);
+    public static final RegistryObject<Marshmallow> MARSHMALLOW = ITEMS.register("marshmallow", Marshmallow::new);
+    public static final RegistryObject<MarshmallowOnAStick> MARSHMALLOW_ON_A_STICK = ITEMS.register("marshmallow_on_a_stick", MarshmallowOnAStick::new);
+    public static final RegistryObject<BurntMarshmallow> BURNT_MARSHMALLOW = ITEMS.register("burnt_marshmallow", BurntMarshmallow::new);
+    public static final RegistryObject<BurntMarshmallowOnAStick> BURNT_MARSHMALLOW_ON_A_STICK = ITEMS.register("burnt_marshmallow_on_a_stick", BurntMarshmallowOnAStick::new);
+    public static final RegistryObject<SmolderingMarshmallow> SMOLDERING_MARSHMALLOW = ITEMS.register("smoldering_marshmallow", SmolderingMarshmallow::new);
+    public static final RegistryObject<Caramel> CARAMEL = ITEMS.register("caramel", Caramel::new);
+    public static final RegistryObject<CaramelApple> CARAMEL_APPLE = ITEMS.register("caramel_apple", CaramelApple::new);
+    public static final RegistryObject<Jelly> JELLY = ITEMS.register("jelly", Jelly::new);
+    public static final RegistryObject<CaramelMelon> CARAMEL_MELON = ITEMS.register("caramel_melon", CaramelMelon::new);
+    public static final RegistryObject<CaramelChorus> CARAMEL_CHORUS = ITEMS.register("caramel_chorus", CaramelChorus::new);
+    public static final RegistryObject<CaramelPumpkin> CARAMEL_PUMPKIN = ITEMS.register("caramel_pumpkin", CaramelPumpkin::new);
+    public static final RegistryObject<CaramelChocolate> CARAMEL_CHOCOLATE = ITEMS.register("caramel_chocolate", CaramelChocolate::new);
+    public static final RegistryObject<CaramelGlowBerries> CARAMEL_GLOW_BERRIES = ITEMS.register("caramel_glow_berries", CaramelGlowBerries::new);
+    public static final RegistryObject<CaramelSweetBerries> CARAMEL_SWEET_BERRIES = ITEMS.register("caramel_sweet_berries", CaramelSweetBerries::new);
 }

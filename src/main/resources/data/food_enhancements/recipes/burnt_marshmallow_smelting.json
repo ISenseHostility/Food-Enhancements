@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "food_enhancements:marshmallow"
+  },
+  "result": "food_enhancements:burnt_marshmallow",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -1,0 +1,56 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "food_enhancements:items/jelly/jelly_white"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 1
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_red"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 2
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_green"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 3
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_yellow"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 4
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_orange"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 5
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_purple"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 6
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_white"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 7
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_brown"
+    },
+    {
+      "predicate": {
+        "food_enhancements:jelly_type": 8
+      },
+      "model": "food_enhancements:item/jelly_types/jelly_fiery"
+    }
+  ]
+}

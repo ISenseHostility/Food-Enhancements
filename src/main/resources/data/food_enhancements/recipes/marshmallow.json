@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xyx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:sugar"
+    },
+    "y":
+    {
+      "item": "food_enhancements:gelatin"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:marshmallow"
+  }
+}
