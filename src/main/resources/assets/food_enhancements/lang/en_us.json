@@ -74,5 +74,9 @@
   "item.food_enhancements.caramel_pumpkin": "Caramel Pumpkin",
   "item.food_enhancements.caramel_chocolate": "Caramel Chocolate",
   "item.food_enhancements.caramel_glow_berries": "Caramel Glow Berries",
-  "item.food_enhancements.caramel_sweet_berries": "Caramel Sweet Berries"
+  "item.food_enhancements.caramel_sweet_berries": "Caramel Sweet Berries",
+  "item.food_enhancements.cooked_chicken_skewer": "Cooked Chicken Skewer",
+  "item.food_enhancements.cooked_porkchop_skewer": "Cooked Porkchop Skewer",
+  "item.food_enhancements.steak_skewer": "Steak Skewer",
+  "item.food_enhancements.cooked_mutton_skewer": "Cooked Mutton Skewer"
 }

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  y",
+    " y ",
+    "x  "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "y":
+    {
+      "item": "minecraft:cooked_mutton"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:cooked_mutton_skewer",
+    "count": 1
+  }
+}
