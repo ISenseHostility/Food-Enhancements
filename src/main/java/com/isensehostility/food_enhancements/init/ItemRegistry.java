@@ -93,6 +93,10 @@ public class ItemRegistry {
     public static final RegistryObject<CaramelSweetBerries> CARAMEL_SWEET_BERRIES = ITEMS.register("caramel_sweet_berries", CaramelSweetBerries::new);
     public static final RegistryObject<CookedChickenSkewer> COOKED_CHICKEN_SKEWER = ITEMS.register("cooked_chicken_skewer", CookedChickenSkewer::new);
     public static final RegistryObject<CookedPorkchopSkewer> COOKED_PORKCHOP_SKEWER = ITEMS.register("cooked_porkchop_skewer", CookedPorkchopSkewer::new);
-    public static final RegistryObject<SteakSkewer> STEAK_SKEWER = ITEMS.register("steak_skewer", SteakSkewer::new);
     public static final RegistryObject<CookedMuttonSkewer> COOKED_MUTTON_SKEWER = ITEMS.register("cooked_mutton_skewer", CookedMuttonSkewer::new);
+    public static final RegistryObject<SteakSkewer> STEAK_SKEWER = ITEMS.register("steak_skewer", SteakSkewer::new);
+    public static final RegistryObject<CookedRabbitSkewer> COOKED_RABBIT_SKEWER = ITEMS.register("cooked_rabbit_skewer", CookedRabbitSkewer::new);
+    public static final RegistryObject<HoneyRoastedChickenSkewer> HONEY_ROASTED_CHICKEN_SKEWER = ITEMS.register("honey_roasted_chicken_skewer", HoneyRoastedChickenSkewer::new);
+    public static final RegistryObject<MixedGrillSkewer> MIXED_GRILL_SKEWER = ITEMS.register("mixed_grill_skewer", MixedGrillSkewer::new);
+    public static final RegistryObject<SeasonedPorkSkewer> SEASONED_PORK_SKEWER = ITEMS.register("seasoned_pork_skewer", SeasonedPorkSkewer::new);
 }
