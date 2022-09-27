@@ -75,12 +75,15 @@
   "item.food_enhancements.caramel_chocolate": "Caramel Chocolate",
   "item.food_enhancements.caramel_glow_berries": "Caramel Glow Berries",
   "item.food_enhancements.caramel_sweet_berries": "Caramel Sweet Berries",
-  "item.food_enhancements.cooked_chicken_skewer": "Cooked Chicken Skewer",
-  "item.food_enhancements.cooked_porkchop_skewer": "Cooked Porkchop Skewer",
-  "item.food_enhancements.cooked_mutton_skewer": "Cooked Mutton Skewer",
+  "item.food_enhancements.cooked_chicken_skewer": "Chicken Skewer",
+  "item.food_enhancements.cooked_porkchop_skewer": "Pork Skewer",
+  "item.food_enhancements.cooked_mutton_skewer": "Mutton Skewer",
   "item.food_enhancements.steak_skewer": "Steak Skewer",
-  "item.food_enhancements.cooked_rabbit_skewer": "Cooked Rabbit Skewer",
+  "item.food_enhancements.cooked_rabbit_skewer": "Rabbit Skewer",
   "item.food_enhancements.honey_roasted_chicken_skewer": "Honey Roasted Chicken Skewer",
   "item.food_enhancements.mixed_grill_skewer": "Mixed Grill Skewer",
-  "item.food_enhancements.seasoned_pork_skewer": "Seasoned Pork Skewer"
+  "item.food_enhancements.seasoned_pork_skewer": "Seasoned Pork Skewer",
+  "item.food_enhancements.squid_tentacle_skewer": "Squid Tentacle Skewer",
+  "item.food_enhancements.spider_leg_skewer": "Spider Leg Skewer",
+  "item.food_enhancements.cave_spider_leg_skewer": "Cave Spider Leg Skewer"
 }
