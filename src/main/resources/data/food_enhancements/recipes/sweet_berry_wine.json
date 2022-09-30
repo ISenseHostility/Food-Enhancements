@@ -5,10 +5,10 @@
       "item": "minecraft:glass_bottle"
     },
     {
-      "item": "minecraft:sugar"
+      "item": "minecraft:glass_bottle"
     },
     {
-      "item": "minecraft:sweet_berries"
+      "item": "minecraft:sugar"
     },
     {
       "item": "minecraft:sweet_berries"
@@ -17,6 +17,6 @@
   "result":
   {
     "item": "food_enhancements:sweet_berry_wine",
-    "count": 1
+    "count": 2
   }
 }
