@@ -8,11 +8,15 @@
       "item": "minecraft:glass_bottle"
     },
     {
+      "item": "minecraft:glass_bottle"
+    },
+    {
       "item": "minecraft:sugar"
     }
   ],
   "result":
   {
-    "item": "food_enhancements:pumpkin_juice"
+    "item": "food_enhancements:pumpkin_juice",
+    "count": 2
   }
 }
