@@ -10,7 +10,7 @@ public class MixedGrillSkewer extends Item {
         super(new Properties()
                 .tab(FoodEnhancements.TAB)
                 .food(new FoodProperties.Builder()
-                        .nutrition(9)
+                        .nutrition(13)
                         .saturationMod(0.9F)
                         .meat()
                         .build())

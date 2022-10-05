@@ -12,7 +12,7 @@ public class HoneyRoastedChickenSkewer extends Item {
         super(new Properties()
                 .tab(FoodEnhancements.TAB)
                 .food(new FoodProperties.Builder()
-                        .nutrition(14)
+                        .nutrition(15)
                         .saturationMod(0.9F)
                         .meat()
                         .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 0), 1.0F)
