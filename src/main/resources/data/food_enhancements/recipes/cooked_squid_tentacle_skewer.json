@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  y",
+    " y ",
+    "x  "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "y":
+    {
+      "item": "food_enhancements:cooked_squid_tentacle"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:squid_tentacle_skewer",
+    "count": 1
+  }
+}

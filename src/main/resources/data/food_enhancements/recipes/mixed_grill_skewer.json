@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "  z",
+    " y ",
+    "x  "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:stick"
+    },
+    "y":
+    {
+      "item": "food_enhancements:honey_roasted_chicken"
+    },
+    "z":
+    {
+      "item": "minecraft:cooked_mutton"
+    }
+  },
+  "result":
+  {
+    "item": "food_enhancements:mixed_grill_skewer",
+    "count": 1
+  }
+}
