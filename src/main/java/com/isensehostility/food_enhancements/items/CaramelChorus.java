@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.player.Player;
@@ -17,8 +18,6 @@ import net.minecraft.world.level.Level;
 import java.util.Random;
 
 public class CaramelChorus extends Item {
-
-    private final Random random = new Random();
 
     public CaramelChorus() {
         super(new Properties()
@@ -33,8 +32,9 @@ public class CaramelChorus extends Item {
 
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
-
         ItemStack itemstack = super.finishUsingItem(stack, worldIn, entityLiving);
+        RandomSource random = entityLiving.getRandom();
+
         if (!worldIn.isClientSide) {
             double d0 = entityLiving.getX();
             double d1 = entityLiving.getY();

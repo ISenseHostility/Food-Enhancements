@@ -6,6 +6,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.player.Player;
@@ -15,9 +16,7 @@ import net.minecraft.world.level.Level;
 
 import java.util.Random;
 
-public class ChorusJuice extends Item {
-
-    private Random random = new Random();
+public class ChorusJuice extends BottleFood {
 
     public ChorusJuice() {
         super(new Item.Properties()
@@ -36,15 +35,10 @@ public class ChorusJuice extends Item {
     }
 
     @Override
-    public UseAnim getUseAnimation(ItemStack p_41452_) {
-        return UseAnim.DRINK;
-    }
-
-    @Override
     public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity entityLiving) {
-        Player playerentity = entityLiving instanceof Player ? (Player) entityLiving : null;
-
         ItemStack itemstack = super.finishUsingItem(stack, worldIn, entityLiving);
+        RandomSource random = entityLiving.getRandom();
+
         if (!worldIn.isClientSide) {
             double d0 = entityLiving.getX();
             double d1 = entityLiving.getY();
@@ -73,15 +67,6 @@ public class ChorusJuice extends Item {
             }
         }
 
-        if (playerentity == null || !playerentity.isCreative()) {
-            if (stack.isEmpty()) {
-                return new ItemStack(Items.GLASS_BOTTLE);
-            }
-
-            if (playerentity != null) {
-                playerentity.getInventory().add(new ItemStack(Items.GLASS_BOTTLE));
-            }
-        }
         return this.isEdible() ? entityLiving.eat(worldIn, stack) : stack;
     }
 }
